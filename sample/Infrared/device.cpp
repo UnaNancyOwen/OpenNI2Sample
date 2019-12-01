@@ -65,6 +65,7 @@ inline void Device::initializeInfrared()
     // Create Stream
     OPENNI_CHECK( infrared_stream.create( device, openni::SENSOR_IR ) );
 
+    /*
     // Set Video Mode
     openni::VideoMode infrared_mode = infrared_stream.getVideoMode();
     infrared_mode.setResolution( infrared_width, infrared_height );
@@ -72,6 +73,7 @@ inline void Device::initializeInfrared()
     //infrared_mode.setPixelFormat( openni::PixelFormat::PIXEL_FORMAT_GRAY16 );
     //infrared_mode.setPixelFormat( openni::PixelFormat::PIXEL_FORMAT_GRAY8 );
     OPENNI_CHECK( infrared_stream.setVideoMode( infrared_mode ) );
+    */
 
     // Start Stream
     OPENNI_CHECK( infrared_stream.start() );

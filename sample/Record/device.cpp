@@ -76,6 +76,7 @@ inline void Device::initializeColor()
     // Create Stream
     OPENNI_CHECK( color_stream.create( device, openni::SENSOR_COLOR ) );
 
+    /*
     // Set Video Mode
     #ifdef RECORD
     openni::VideoMode color_mode;
@@ -84,6 +85,7 @@ inline void Device::initializeColor()
     color_mode.setPixelFormat( openni::PixelFormat::PIXEL_FORMAT_RGB888 );
     OPENNI_CHECK( color_stream.setVideoMode( color_mode ) );
     #endif
+    */
 
     // Start Stream
     OPENNI_CHECK( color_stream.start() );
@@ -95,6 +97,7 @@ inline void Device::initializeDepth()
     // Create Stream
     OPENNI_CHECK( depth_stream.create( device, openni::SENSOR_DEPTH ) );
 
+    /*
     // Set Video Mode
     #ifdef RECORD
     openni::VideoMode depth_mode;
@@ -103,6 +106,7 @@ inline void Device::initializeDepth()
     depth_mode.setPixelFormat( openni::PixelFormat::PIXEL_FORMAT_DEPTH_1_MM );
     OPENNI_CHECK( depth_stream.setVideoMode( depth_mode ) );
     #endif
+    */
 
     // Start Stream
     OPENNI_CHECK( depth_stream.start() );

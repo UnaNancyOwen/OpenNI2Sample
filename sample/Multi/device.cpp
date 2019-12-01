@@ -42,12 +42,14 @@ inline void Device::initializeColor()
     // Create Stream
     OPENNI_CHECK( color_stream.create( device, openni::SENSOR_COLOR ) );
 
+    /*
     // Set Video Mode
     openni::VideoMode color_mode;
     color_mode.setResolution( color_width, color_height );
     color_mode.setFps( color_fps );
     color_mode.setPixelFormat( openni::PixelFormat::PIXEL_FORMAT_RGB888 );
     OPENNI_CHECK( color_stream.setVideoMode( color_mode ) );
+    */
 
     // Start Stream
     OPENNI_CHECK( color_stream.start() );

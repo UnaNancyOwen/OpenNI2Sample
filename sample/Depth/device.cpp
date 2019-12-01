@@ -65,12 +65,14 @@ inline void Device::initializeDepth()
     // Create Stream
     OPENNI_CHECK( depth_stream.create( device, openni::SENSOR_DEPTH ) );
 
+    /*
     // Set Video Mode
     openni::VideoMode depth_mode;
     depth_mode.setResolution( depth_width, depth_height );
     depth_mode.setFps( depth_fps );
     depth_mode.setPixelFormat( openni::PixelFormat::PIXEL_FORMAT_DEPTH_1_MM );
     OPENNI_CHECK( depth_stream.setVideoMode( depth_mode ) );
+    */
 
     // Start Stream
     OPENNI_CHECK( depth_stream.start() );
